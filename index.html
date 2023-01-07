@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Now Playing: <div id="playingListName" style="color: red"></div></h1>
+  <!-- <p>Please select the music list as below</p>  -->
+</div>
+  
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>PlayList 1</h3>
+            <hr/>
+            <h4>2pm - 開始播音樂</h4>
+            <br/>
+            <p class="col-12-md">
+                <button class="col-5-md btn" onclick="fadeInClick(1)">開始淡入</button>
+                <button class="col-5-md btn" onclick="fadeOutClick(1)">開始淡出</button>
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <h3>PlayList 2</h3>
+            <hr/>
+            <h4>Around 2:30pm - MC開始歡迎嘉賓</h4>
+            <h5 style="color: red">音樂要再大聲少少</h5>
+            <br/>
+            <p class="col-12-md">
+            <button class="col-5-md btn" onclick="fadeInClick(2)">Fade In</button>
+            <button class="col-5-md btn" onclick="fadeOutClick(2)">Fade Out</button>
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <h3>PlayList 3</h3>
+            <hr/>
+            <h4 style="color: red">等律師signal播入場音樂!!!</h4>
+            <br/>
+            <p class="col-12-md">
+            <button class="col-5-md btn" onclick="fadeInClick(3)">Fade In</button>
+            <button class="col-5-md btn" onclick="fadeOutClick(3)">Fade Out</button>
+            </p>
+        </div>
+    </div>
+    <div class="row" style="padding-top:20px">
+        <div class="col-sm-4">
+            <h3>PlayList 4</h3>
+            <hr/>
+            <h4>合照時間</h4>
+            <br/>
+            <p class="col-12-md">
+            <button class="col-5-md btn" onclick="fadeInClick(4)">Fade In</button>
+            <button class="col-5-md btn" onclick="fadeOutClick(4)">Fade Out</button>
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <h3>PlayList 5</h3>
+            <hr/>
+            <h4>完結環節 + 補影環節</h4>
+            <br/>
+            <p class="col-12-md">
+            <button class="col-5-md btn" onclick="fadeInClick(5)">Fade In</button>
+            <button class="col-5-md btn" onclick="fadeOutClick(5)">Fade Out</button>
+            </p>
+        </div>
+  </div>
+</div>
+
+
+<audio id="playlist1" src="music/playlist1.mp3" autoplay="autoplay"></audio>
+<audio id="playlist2" src="music/playlist2.mp3" autoplay="autoplay"></audio>
+<audio id="playlist3" src="music/playlist3.mp3" autoplay="autoplay"></audio>
+<audio id="playlist4" src="music/playlist4.mp3" autoplay="autoplay"></audio>
+<audio id="playlist5" autoplay="autoplay"></audio>
+
+</body>
+<script src="./index.js"></script>
+</html>
